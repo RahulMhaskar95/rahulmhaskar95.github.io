@@ -98,6 +98,26 @@ h2 {
   display: none;
   margin-top: 15px;
 }
+.project-link-btn {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 8px 15px;
+  background-color: #007bff; /* Professional Blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.project-link-btn:hover {
+  background-color: #0056b3;
+}
+
+.project-link-btn i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
 
 /* CONTACT */
 #contact p {
