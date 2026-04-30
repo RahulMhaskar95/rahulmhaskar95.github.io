@@ -1,5 +1,4 @@
 function toggleProject(id) {
-  const project = document.getElementById(id);
-  project.style.display =
-    project.style.display === "block" ? "none" : "block";
+  const el = document.getElementById(id);
+  el.classList.toggle("show");
 }
