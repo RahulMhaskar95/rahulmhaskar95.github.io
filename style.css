@@ -9,7 +9,9 @@ body {
   background: #0f172a;
   color: #e5e7eb;
 }
-
+.show {
+  display: block;
+}
 /* HERO */
 .hero {
   text-align: center;
