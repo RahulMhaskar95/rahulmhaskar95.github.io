@@ -6,372 +6,114 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f5f7fa;
-  color: #333;
-  line-height: 1.7;
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #007bff, #004a99);
-  color: #fff;
   text-align: center;
   padding: 80px 20px;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
 }
 
 .hero h1 {
-  font-family: "Playfair Display", serif;
   font-size: 3rem;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 1.2rem;
+  text-shadow: 0 0 20px rgba(37,99,235,0.7);
 }
 
 /* SECTIONS */
 section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 30px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-h2 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: #007bff;
-  margin-bottom: 25px;
+  background: #020617;
+  border-radius: 12px;
 }
 
 /* SKILLS */
 .skills-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .skills-list li {
-  background: #007bff;
-  color: #fff;
+  background: #2563eb;
   padding: 10px 18px;
   margin: 8px;
-  border-radius: 25px;
-  transition: transform 0.3s;
+  border-radius: 20px;
 }
 
-.skills-list li:hover {
-  transform: scale(1.1);
+/* 🔥 TRADING LAYOUT */
+.trading-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
 }
 
-/* PROJECTS */
-.project-card {
-  margin-bottom: 25px;
-  padding: 20px;
-  border-left: 5px solid #007bff;
-  background: #f9f9f9;
+.panel {
+  background: #020617;
+  padding: 15px;
   border-radius: 8px;
+  border: 1px solid #1e293b;
 }
 
-.project-card h3 {
+.market ul {
+  list-style: none;
+}
+
+.green { color: #22c55e; }
+.red { color: #ef4444; }
+
+/* Chart */
+.fake-chart {
+  height: 200px;
+  background: linear-gradient(to top, #020617, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+}
+
+/* Trade Panel */
+.trade input {
+  width: 100%;
+  padding: 8px;
   margin-bottom: 10px;
 }
 
-.project-card button {
-  background: #007bff;
+.buy {
+  background: #22c55e;
+  color: black;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.sell {
+  background: #ef4444;
   color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
+  width: 100%;
 }
 
-.project-card button:hover {
-  background: #0056cc;
-}
-
-.project-details {
-  display: none;
-  margin-top: 15px;
-}
-.project-link-btn {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 8px 15px;
-  background-color: #007bff; /* Professional Blue */
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: background 0.3s ease;
-}
-
-.project-link-btn:hover {
-  background-color: #0056b3;
-}
-
-.project-link-btn i {
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-/* CONTACT */
-#contact p {
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-/* FOOTER */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #0f172a; /* dark blue-gray */
-  color: #e5e7eb;
-  line-height: 1.7;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #2563eb, #1e3a8a);
-  color: #fff;
-  text-align: center;
-  padding: 90px 20px;
-}
-
-.hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #c7d2fe;
-}
-
-/* SECTIONS */
-section {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 35px;
-  background: #020617;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
-h2 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: #60a5fa;
-  margin-bottom: 25px;
-}
-
-/* SKILLS */
-.skills-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skills-list li {
-  background: #2563eb;
-  color: #fff;
-  padding: 10px 18px;
-  margin: 8px;
-  border-radius: 25px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skills-list li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px 15px rgba(37,99,235,0.6);
-}
-
-/* PROJECTS */
+/* PROJECT */
 .project-card {
-  margin-bottom: 30px;
-  padding: 25px;
-  border-left: 5px solid #3b82f6;
-  background: #020617;
-  border-radius: 10px;
-}
-
-.project-card h3 {
-  margin-bottom: 12px;
-  color: #e0f2fe;
-}
-
-.project-card button {
-  background: #3b82f6;
-  color: #020617;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
-}
-
-.project-card button:hover {
-  background: #60a5fa;
-  transform: translateY(-2px);
+  margin-top: 20px;
 }
 
 .project-details {
   display: none;
-  margin-top: 18px;
-  color: #cbd5f5;
-}
-
-/* CONTACT */
-#contact p {
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-/* FOOTER */
-footer {
-  background: #020617;
-  color: #94a3b8;
-  text-align: center;
-  padding: 18px;
-  margin-top: 50px;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #0f172a; /* dark blue-gray */
-  color: #e5e7eb;
-  line-height: 1.7;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #2563eb, #1e3a8a);
-  color: #fff;
-  text-align: center;
-  padding: 90px 20px;
-}
-
-.hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
-}
-
-.hero p {
   margin-top: 10px;
-  font-size: 1.2rem;
-  color: #c7d2fe;
-}
-
-/* SECTIONS */
-section {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 35px;
-  background: #020617;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
-h2 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: #60a5fa;
-  margin-bottom: 25px;
-}
-
-/* SKILLS */
-.skills-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skills-list li {
-  background: #2563eb;
-  color: #fff;
-  padding: 10px 18px;
-  margin: 8px;
-  border-radius: 25px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skills-list li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px 15px rgba(37,99,235,0.6);
-}
-
-/* PROJECTS */
-.project-card {
-  margin-bottom: 30px;
-  padding: 25px;
-  border-left: 5px solid #3b82f6;
-  background: #020617;
-  border-radius: 10px;
-}
-
-.project-card h3 {
-  margin-bottom: 12px;
-  color: #e0f2fe;
-}
-
-.project-card button {
-  background: #3b82f6;
-  color: #020617;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
-}
-
-.project-card button:hover {
-  background: #60a5fa;
-  transform: translateY(-2px);
-}
-
-.project-details {
-  display: none;
-  margin-top: 18px;
-  color: #cbd5f5;
 }
 
 /* CONTACT */
-#contact p {
+#contact {
   text-align: center;
-  font-size: 1.1rem;
 }
 
 /* FOOTER */
 footer {
-  background: #020617;
-  color: #94a3b8;
   text-align: center;
-  padding: 18px;
-  margin-top: 50px;
+  padding: 20px;
+  color: #94a3b8;
 }
