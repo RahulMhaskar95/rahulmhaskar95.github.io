@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rahul Mhaskar | Portfolio</title>
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- Boxicons -->
+  <!-- Icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="hero">
   <h1>Rahul Mhaskar</h1>
-  <p>Aspiring IT Professional</p>
+  <p>Trading UI Inspired Developer</p>
 </header>
 
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I seek challenging opportunities where I can fully use my skills
-    for the success of the organization.
+    I build modern web interfaces inspired by real-world platforms,
+    focusing on performance dashboards and trading-style UI systems.
   </p>
 </section>
 
@@ -37,100 +38,72 @@
     <li>Java</li>
     <li>SQL</li>
     <li>Git</li>
-    <li>Arduino</li>
   </ul>
 </section>
 
-<section id="projects">
-  <h2>Academic Projects</h2>
+<!-- 🔥 NEW TRADING DASHBOARD PREVIEW -->
+<section id="trading-demo">
+  <h2>Trading Dashboard Preview</h2>
 
-  <!-- Project 1 -->
-  <div class="project-card">
-    <h3>Arduino-Based Traffic System Management</h3>
-    <button onclick="toggleProject('p1')">View Full Description</button>
-
-    <div class="project-details" id="p1">
-      <p>
-        Led a team of four to design and implement an Arduino-based
-        traffic management system. The system uses four infrared (IR)
-        sensors to detect traffic density and dynamically control LED
-        traffic signals.
-      </p>
-      <p>
-        Sensor data is processed using an Arduino Uno microcontroller.
-        The embedded code was developed using Arduino IDE, and circuit
-        schematics were designed using Proteus software.
-      </p>
-      <p>
-        A physical working model was constructed to demonstrate
-        real-world functionality and intelligent traffic control.
-      </p>
-    </div>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="project-card">
-    <h3>Hospital ERP System</h3>
-    <button onclick="toggleProject('p2')">View Full Description</button>
-
-    <div class="project-details" id="p2">
-      <p>
-        Designed the complete architecture of a Hospital ERP System
-        using Java and Spring Boot principles. The system follows a
-        layered architecture consisting of Controller, Service,
-        Repository, and Database layers.
-      </p>
-      <p>
-        Key modules include Patient Management, Doctor & Staff
-        Management, Appointment Scheduling, Pharmacy, Laboratory,
-        Billing & Finance, Inventory Management, and User Security
-        using role-based access control and JWT authentication.
-      </p>
-      <p>
-        The project emphasizes object-oriented design, RESTful APIs,
-        database relationships using MySQL, and industry-standard
-        design patterns such as MVC and Repository Pattern.
-      </p>
-    </div>
-  </div>
-  <!-- Project 3 -->
-    <div class="project-card">
-    <h3>Forex Trade Journal</h3>
-    <button onclick="toggleProject('p3')">View Full Description</button>
+  <div class="trading-layout">
     
+    <!-- Market Watch -->
+    <div class="panel market">
+      <h3>Market</h3>
+      <ul>
+        <li>EUR/USD <span class="green">1.0823</span></li>
+        <li>GBP/USD <span class="red">1.2640</span></li>
+        <li>XAU/USD <span class="green">2320</span></li>
+      </ul>
+    </div>
+
+    <!-- Chart Area -->
+    <div class="panel chart">
+      <h3>Chart</h3>
+      <div class="fake-chart">Chart Area</div>
+    </div>
+
+    <!-- Trade Panel -->
+    <div class="panel trade">
+      <h3>Trade</h3>
+      <input type="number" placeholder="Lot Size">
+      <button class="buy">BUY</button>
+      <button class="sell">SELL</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Forex Trade Journal</h3>
+    <button onclick="toggleProject('p3')">View Details</button>
+
     <a href="https://rahulmhaskar69.github.io/forex-Journal-website/" target="_blank" class="project-link-btn">
-       <i class='bx bx-link-external'></i> Visit Live Website
+      <i class='bx bx-link-external'></i> Live Demo
     </a>
 
     <div class="project-details" id="p3">
       <p>
-        Developed a comprehensive web application designed for traders to log, track, and analyze their foreign exchange market performance. This tool helps in identifying trading patterns and improving emotional discipline.
-      </p>
-      <p>
-        The application features a clean, intuitive dashboard built with <strong>HTML, CSS, and JavaScript</strong>. It allows users to record entry/exit points, risk-to-reward ratios, and trade outcomes to calculate win rates and profitability over time.
-      </p>
-      <p>
-        By leveraging local storage or database integration, the journal ensures that historical trade data is preserved for long-term strategy backtesting and performance auditing.
+        Trading journal with analytics dashboard, built using HTML, CSS, and JavaScript.
+        Designed with trading platform UI concepts for realistic experience.
       </p>
     </div>
   </div>
-
 
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>
-    <i class="bx bx-envelope"></i>
-    rahulmhaskar239@gmail.com
-  </p>
+  <p><i class="bx bx-envelope"></i> rahulmhaskar239@gmail.com</p>
 </section>
 
 <footer>
-  <p>© 2025 Rahul Mhaskar. All Rights Reserved.</p>
+  <p>© 2025 Rahul Mhaskar</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
